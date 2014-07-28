@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import "style.css";
+            #nav_menu_backdrop{
+                /* size */
+                width:        100%;
+                margin-left:  auto;
+                margin-right: auto;
+                /* color */
+               // background:   white;
+            }
+            #nav_menu{
+                background-color:#1a1a1a;
+                width:900px;
+                height:32px;
+                margin-top:auto;
+                margin-left:auto;
+                margin-right:auto;
+            }
+
+            /* Only display the 1st level menu */
+            //nav ul ul {	display:none; }
+            //nav ul li:hover > ul { display: block; }
+            //nav ul:after { content: ""; clear: both; display: block; }
+
+            /* 1st level menu */
+            nav ul {
+                list-style: none;
+                /* prevents position changing during zooming in */
+                position: relative;
+                margin-left:550px;
+                display: inline-table;
+                /* prevents posed behind Google Map or other client side scripts */
+                z-index: 1;
+            }
+            nav ul li {
+                /* padding and background size adjustment */
+                padding: 9px 0;
+                width: 60px;
+                float: left;
+                
+            }
+            nav ul li a {
+                color:white;
+                font-size:12px;
+                text-align:center;
+                text-decoration: none;
+                display: block;
+            }
+               
+                    nav ul ul ul li {
+                        width: 200px;
+                        float: none;
+                        position: relative;
+                    }
+
+            /* 1st level menu: events */
+           // nav ul li:hover { background:}
+            nav ul li:hover a {	color:#e77b4c; }
+                
+        </style>
+    </head>
+    
+    <body>
+        <div id="nav_menu_backdrop">
+            <div id="nav_menu">
+                <nav>
+                    <ul>	    		
+                        <!-- menu 1 -->
+                        <li><a href="index.php"><b>Home</b></a>
+                            <!-- menu 1 -->
+                        </li>
+
+                        <!-- menu 2 -->
+                        <li><a href="about.php"><b>About</b></a>
+                            </li>
+
+                        <!-- menu 3 -->
+                        <li><a href="why.php"><b>Why</b></a>
+                            </li>
+                            
+                        <li><a href="career.php"><b>Career</b></a>
+                            </li>
+                            
+                        <li><a href="contact.php"><b>Contact</b></a>
+                            </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </body>
+</html>
