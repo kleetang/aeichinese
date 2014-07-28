@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import "style.css";
+            footer ul{
+                list-style: none;
+                /* prevents position changing during zooming in */
+                position: relative;
+                margin-left:120px;
+                display: inline-table;
+                /* prevents posed behind Google Map or other client side scripts */
+                z-index: 1;
+            }
+            footer ul li {
+                /* padding and background size adjustment */
+                padding: 10px 0;
+                width: 60px;
+                float: left;
+                left: 10px;
+                
+            }
+            footer ul li a {
+                color:white;
+                font-size:10px;
+                text-align:center;
+                text-decoration: none;
+                display: block;
+            }
+
+            /* 1st level menu: events */
+            footer ul li:hover {    background:black;}
+            footer ul li:hover a {  color:#e77b4c; }
+        </style>
+    </head>
+    <body>
+            <div id='footer'>
+                <div id='footer_left'>
+                    <img src="img/left.png">
+                </div>
+                <div id='footer_right'>
+                    <img src="img/right.png">
+                </div>
+            </div>
+    </body>
+</html>
