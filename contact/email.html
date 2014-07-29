@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Email</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #email_backdrop{
+                /* size */
+                width:        100%;
+                margin-left:  auto;
+                margin-right: auto;
+                
+            }
+            #email{
+                background-color:white;
+                width:520px;
+                height:auto;
+                margin-top:auto;
+                margin-left:auto;
+                margin-right:auto;
+            }
+            #submit{
+                width:520px;
+                height:auto;
+                margin-top:40px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom: 80px;
+            }
+            .textbox { 
+                border: 1px solid #c4c4c4; 
+                height: 25px; 
+                width: 160px; 
+                font-size: 13px; 
+                padding: 4px 4px 4px 4px; 
+                border-radius: 4px; 
+                -moz-border-radius: 4px; 
+                -webkit-border-radius: 4px; 
+                box-shadow: 0px 0px 8px #d9d9d9; 
+                -moz-box-shadow: 0px 0px 8px #d9d9d9; 
+                -webkit-box-shadow: 0px 0px 8px #d9d9d9;
+                margin-bottom: 10px;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                left: 10px;
+                
+            } 
+            .textbox:focus { 
+                outline: none; 
+                border: 1px solid #7bc1f7; 
+                box-shadow: 0px 0px 8px #7bc1f7; 
+                -moz-box-shadow: 0px 0px 8px #7bc1f7; 
+                -webkit-box-shadow: 0px 0px 8px #7bc1f7; 
+            }
+            .submit { 
+                border: 1px solid #c4c4c4; 
+                height: 25px; 
+                width: 75px; 
+                font-size: 13px; 
+                padding: 4px 4px 4px 4px; 
+                border-radius: 4px; 
+                -moz-border-radius: 4px; 
+                -webkit-border-radius: 4px; 
+                box-shadow: 0px 0px 8px #d9d9d9; 
+                -moz-box-shadow: 0px 0px 8px #d9d9d9; 
+                -webkit-box-shadow: 0px 0px 8px #d9d9d9;
+                margin-bottom: 10px;
+                
+            }
+            .textbox1 { 
+                border: 1px solid #c4c4c4; 
+                height: 160px; 
+                width: 440px; 
+                font-size: 13px; 
+                padding-top: 4px;
+                padding-left: 4px;
+                border-radius: 4px; 
+                -moz-border-radius: 4px; 
+                -webkit-border-radius: 4px; 
+                box-shadow: 0px 0px 8px #d9d9d9; 
+                -moz-box-shadow: 0px 0px 8px #d9d9d9; 
+                -webkit-box-shadow: 0px 0px 8px #d9d9d9;
+                margin-bottom: 10px;
+                margin-right: 25px;
+                margin-top:10px;
+                
+            }
+        </style>
+
+    </head>
+     
+    <body>
+        <div id="email_backdrop">
+            <div id="email">
+                <h2>Contact Us</h2>
+                <br>
+                <p style="font-family:Open Sans;color:#373833;font-size:14px;margin-top:6px;">    
+                
+                To answer any of your questions, please send us an email by completing the form below and we will promptly respond to your inquiry.
+                </p>
+            </div> 
+            
+            <div id="submit"> 
+                <form action="MAILTO:someone@example.com" method="post" enctype="text/plain">
+                    
+                    *First name: <input class="textbox" type="text" name="First name" value=""><br>
+                    *Last name: <input class="textbox" type="text" name="Last name" value=""><br>
+                    *Email: <input class="textbox" type="text" name="Email" value=""><br>
+                    Phone number: <input class="textbox" type="text" name="Phone" value=""><br>
+                    *Comment<br>
+                    <textarea class="textbox1" cols="50" rows="4"></textarea>
+                    <br> 
+                    <input class="submit" type="submit" value="Send">
+                    <input class="submit" type="reset" value="Reset">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

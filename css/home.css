@@ -1,0 +1,249 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#nav_menu_backdrop {
+    position: absolute;
+    margin-left: 180px;
+    margin-top: 100px;
+    width:250px;
+    height:390px;              
+    background: #b9dbdc;                
+    opacity:0.90;
+    filter:alpha(opacity=90); 
+}
+#nav_menu {
+    position: absolute;
+    margin-top: 2em;
+}
+#nav_menu ul {
+    width: 250px;
+    margin: 0;
+    padding: 0;
+}
+#nav_menu ul li {
+    width: 250px;
+    list-style: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+#nav_menu ul li a {
+    width: 250px;
+    display: block;
+    color: white;
+    font-size: 18pt;
+    text-decoration: none;
+    padding: 0.5em 0em;
+}
+#nav_menu a:link, a:visited { }
+#nav_menu a:hover, a:active { }
+#nav_menu a:hover {}
+
+#nav_menu ul li a:hover {
+    background: white; 
+    color: #e77b4c;
+}
+
+#nav_menu nav ul li:hover ul {
+    display:block;
+}
+#nav_menu nav ul ul {
+    position:absolute;
+    left:250px;
+    top:0;
+    //border-top:1px solid #e9e9e9;
+    display:none;
+}
+#nav_menu nav ul ul li {
+    width: 250px;
+    background: #b9dbdc;                
+    opacity:0.90;
+    filter:alpha(opacity=90); 
+    //border:1px solid #e9e9e9;
+    border-top:0;
+}
+#nav_menu nav ul ul li a {
+    //color:#a8a8a8;  second menu
+    font-size:14px;
+    text-transform:none;
+}
+#nav_menu nav ul ul li a:hover {
+    //color:#929292;
+}
+
+
+
+#content_home {
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 25px;
+	margin-bottom: 50px;
+	overflow: hidden;
+}
+
+#content_home h1 {
+	color: #2B2E43;
+	font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	line-height: 1;
+}
+
+#content_home h2 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #900028;
+	line-height: 1;
+}
+
+#content_home h4 {
+	font-size: 18px;
+	font-weight: bold;
+	color: #666666;
+	font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+	margin-bottom: 5px;
+}
+
+#content_home address {
+	font-weight: 600;
+}
+
+#content_home .article {
+	padding-left: 15px;
+	border-left: 1px dotted #979797;
+	overflow: hidden;
+}
+
+#content_home .news {
+	margin-bottom: 12px;	
+}
+
+#content_home .news p {
+	margin-bottom: 8px;
+}
+
+#content_home .news p:last-of-type {
+	margin-bottom: 0px;
+}
+
+#content_home .news .posted {
+	color: #828282;
+	display: block;
+}
+
+#content_home .news a.photo_link {
+	display: block;
+	background: url(../images/icons/photo_camera.png) no-repeat left 3px;
+	padding-top: 3px;
+	padding-left: 23px;
+}
+
+#content_home .calendar_block {
+	padding-bottom: 5px;
+	margin-bottom: 12px;
+}
+
+#content_home .calendar_block p {
+	margin-bottom: 6px;
+}
+
+#content_home .cal {
+	width: 50px;
+	float: left;
+	font-weight: bold;
+	line-height: 1;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+#content_home .month {
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #FEB738;
+	color: #ffffff;
+	display: block;
+	padding: 5px 0 3px 0;
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-topright: 8px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+#content_home .day {
+	text-align: center;
+	color: #444444;
+	display: block;
+	padding: 3px 0;
+	font-size: 24px;
+}
+
+#content_home .info {
+	width: 220px;
+	float: right;
+}
+
+#content_home .info h3 {
+	font-weight: bold;
+	margin-bottom: 2px;	
+}
+
+#content_home .info span {
+	color: #828282;	
+}
+
+#content_home .announcement {
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+	-webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+	padding: 15px;
+	background-color: #dfdfdf;
+	margin-bottom: 12px;	
+}
+
+#content_home .announcement p:last-of-type {
+	margin-bottom: 0;
+}
+
+#left_column {
+	float: left;
+	width: 300px;
+	margin-left: 10px;
+	margin-right: 20px;
+}
+
+#center_column {
+	float: left;
+	width: 300px;
+}
+
+#right_column {
+	float: right;
+	width: 300px;
+	margin-right: 10px;
+}
+
+#right_column .social img {
+	padding-right: 10px;
+}
+
+a.button {
+	padding-top: 10px;
+	display: block;
+}
+
+a.calendar_link {
+	padding-left: 25px;
+	padding-bottom: 5px;
+	padding-top: 3px;
+	background: url(../images/icons/mini_calendar.png) no-repeat left 2px;
+}
